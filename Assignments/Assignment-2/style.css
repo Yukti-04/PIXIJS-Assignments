@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    
+    
+}
+body{
+    overflow: hidden;
+}
+#loader{
+    background-color: black;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    align-content: center;
+    text-align: center;
+    background-image: url("./Assets/wallpaper1.jpg");
+    background-size: cover;
+}
+#barContainer{
+    position:absolute;
+    height:50px;
+    width:1000px;
+    bottom:40%;
+    left:25%;
+    margin-left:-500px;
+    color:white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#progress{
+    position:absolute;
+    left:75%;
+    text-align: center;
+    font-size: 150px;
+    animation: progress 1s linear infinite;
+}
+@keyframes progress {
+    0%{
+        transform: rotate(0deg);
+        opacity: ;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(360deg);
+        color: white;
+    }
+}
+#game{
+    background-image: url("./Assets/wallpaper2.jpg");
+    background-size: 98%;
+}

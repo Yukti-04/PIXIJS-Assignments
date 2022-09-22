@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "pixi.js": "^6.5.4"
+  },
+  "name": "pixijs-assignments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yukti-04/PIXIJS-Assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yukti-04/PIXIJS-Assignments/issues"
+  },
+  "homepage": "https://github.com/Yukti-04/PIXIJS-Assignments#readme",
+  "description": ""
+}

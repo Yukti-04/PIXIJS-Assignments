@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            color: black;
+        }
+        h1{
+            text-align: center;
+            font: 3em sans-serif;
+            background-color: aqua;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.2/browser/pixi.js" integrity="sha512-XHX32YCocEDCIiENmO7pf91TtRITLfCagN+uLlj9sJ7RUVBHN1JZtlfb02x4OyXfkuQegd1u6i9mzpRMg+w5xw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Image and Text</h1>
+</body>
+<script>
+    const app=new PIXI.Application({
+        width: 1920,
+        height: 800,
+        backgroundColor:0x000000,
+    });
+    const hello=new PIXI.Text("Welcome to the PIXI World!!");
+    hello.x=innerWidth/2;
+    hello.y=innerHeight/12;
+    hello.width=innerWidth/3;
+    hello.height=innerHeight/10;
+    hello.style.fill=0xFFFFFF;
+    hello.anchor.set(0.5);
+    app.loader.add('image','image.jpg').load(()=>{
+        document.body.appendChild(app.view);
+        const image=PIXI.Sprite.from('image');
+        image.width=innerWidth;
+        image.height=innerHeight;
+        app.stage.addChild(image);
+        app.stage.addChild(hello);
+    });
+</script>
+</html>

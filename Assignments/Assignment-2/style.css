@@ -22,31 +22,41 @@ body{
 #barContainer{
     position:absolute;
     height:50px;
-    width:1000px;
-    bottom:40%;
-    left:25%;
+    width:525px;
+    bottom:31%;
+    left:53%;
     margin-left:-500px;
     color:white;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: progress 1s linear infinite;
+}
+#bar{
+    width:0;
+    height:20px;
+    background-color: white;
+    position:absolute;
+    left: 40%;
+    border-radius: 50%;
 }
 #progress{
     position:absolute;
-    left:75%;
+    left:60%;
     text-align: center;
     font-size: 150px;
-    animation: progress 1s linear infinite;
+    /* animation: progress 1s linear infinite; */
 }
 @keyframes progress {
     0%{
-        transform: rotate(0deg);
-        opacity: ;
+        opacity: 0.5;
+        color: white;
     }
     50%{
-        opacity: 0.5;
+        opacity: 1;
+        color: black;
     }
     100%{
-        transform: rotate(360deg);
+        opacity: 0.5;
         color: white;
     }
 }

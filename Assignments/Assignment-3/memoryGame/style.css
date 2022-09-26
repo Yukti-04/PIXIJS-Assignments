@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+#loader{
+    /* background-color: black; */
+    background-image: url("./Assets/background2.jpg");
+    width: 100%;
+    height:100%;
+    position: fixed;
+    background-size: cover;
+    top:0;
+    left:0;
+    align-content: center;
+    text-align: center;
+}
+#barContainer{
+    position:absolute;
+    height:50px;
+    width:200px;
+    bottom:10%;
+    left:50%;
+    margin-left:-100px;
+    color:white;
+}
+#bar{
+    width:0;
+    height:5px;
+    background-color: green;
+}
+#game{
+    width:1920px;
+    height:1200px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    padding: 5px;
+    /* margin: 20px; */
+}
+#container h1{
+    font-family: 'gang_of_threeregular';
+    /* text-align: center; */
+    padding-left: 375px;
+    padding-top: 20px;
+    font-size: 90px;
+    color: red;
+    text-shadow: 5px 5px 5px black;
+    text-transform: uppercase;
+    font-weight:normal;
+    font-style:normal;
+}
+#container{
+    width:1920px;
+    height: 1200px;
+    background-image: url("./Assets/background1.jpg");
+    margin: 0%;
+}
+@font-face {
+    font-family: 'gang_of_threeregular';
+    src: url('./font/go3v2-webfont.woff2') format('woff2'),
+    url('./font/go3v2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'a_asian_ninjaregular';
+    src: url('./font/aasianninja-webfont.woff2') format('woff2'),
+    url('./font/aasianninja-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+img{
+    
+    position: absolute;
+    /* right: 70%;
+    top: 50%;
+    width: 50%; */
+}

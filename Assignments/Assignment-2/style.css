@@ -22,9 +22,9 @@ body{
 #barContainer{
     position:absolute;
     height:50px;
-    width:525px;
-    bottom:31%;
-    left:53%;
+    width:270px;
+    bottom:27%;
+    left:75%;
     margin-left:-500px;
     color:white;
     font-size: 50px;
@@ -33,17 +33,16 @@ body{
 }
 #bar{
     width:0;
-    height:20px;
+    height:10px;
     background-color: white;
     position:absolute;
-    left: 40%;
-    border-radius: 50%;
+    left: 50%;
 }
 #progress{
     position:absolute;
-    left:60%;
+    left:80%;
     text-align: center;
-    font-size: 150px;
+    font-size: 60px;
     /* animation: progress 1s linear infinite; */
 }
 @keyframes progress {
